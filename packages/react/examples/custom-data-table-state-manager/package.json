@@ -8,7 +8,7 @@
     "carbon-components-react": "latest",
     "carbon-icons": "latest",
     "lodash-es": "^4.17.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "prop-types": "^15.7.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
