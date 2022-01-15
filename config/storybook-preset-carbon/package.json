@@ -32,6 +32,6 @@
     "storybook-readme": "^5.0.8"
   },
   "devDependencies": {
-    "@storybook/react": "^5.3.19"
+    "@storybook/react": "^6.4.13"
   }
 }
