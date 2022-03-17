@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:17.7.1-slim
 
 WORKDIR /usr/src/action
 COPY . .
