@@ -5,7 +5,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "export PATH_PREFIX=\"/grid/examples/preview\" && parcel build -d build --public-url $PATH_PREFIX index.html",
-    "develop": "parcel index.html --no-cache"
+    "develop": "parcel index.html --no-cache",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
@@ -16,6 +18,8 @@
     "prettify-xml": "^1.2.0",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  }
+    "react-dom": "^16.13.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
