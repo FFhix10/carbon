@@ -5,7 +5,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "parcel build -d build --public-url \"/pictograms/examples/preview\" index.html",
-    "develop": "parcel index.html --no-cache"
+    "develop": "parcel index.html --no-cache",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
@@ -17,6 +19,8 @@
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "url-polyfill": "^1.1.9"
-  }
+    "url-polyfill": "^1.1.9",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
