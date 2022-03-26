@@ -5,9 +5,15 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "parcel build -d build --public-url \"/layout/examples/preview\" index.html",
-    "develop": "parcel index.html --no-cache"
+    "develop": "parcel index.html --no-cache",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
